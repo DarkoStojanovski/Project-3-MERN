@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000
 const {MONGOURI} = require('./config/keys')
 
 
-mongoose.connect(MONGOURI,{
+mongoose.connect('mongodb+srv://darko:Mentol1979@cluster4.qnzw8.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology: true
 
